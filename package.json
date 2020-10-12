@@ -1,0 +1,26 @@
+{
+  "name": "eloquent-javascript",
+  "version": "1.0.0",
+  "description": "Eloquent Javascript Challenges",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.0.0",
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.8.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edmiller1/Eloquent-Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edmiller1/Eloquent-Javascript/issues"
+  },
+  "homepage": "https://github.com/edmiller1/Eloquent-Javascript#readme"
+}
