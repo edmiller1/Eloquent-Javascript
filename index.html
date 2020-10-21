@@ -25,10 +25,12 @@
         </div>
         <div class="xl:w-1/4">
             <span class="flex justify-center font-semibold text-lg m-0">FizzBuzz</span>
-            <div class="bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <div id="fizzBuzz" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
             <div class="flex justify-center">
-                <button
-                    class="border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="FizzBuzz()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="resetFizzBuzz()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
         <div class="xl:w-1/4">
