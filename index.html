@@ -27,62 +27,181 @@
             <span class="flex justify-center font-semibold text-lg m-0">FizzBuzz</span>
             <div id="fizzBuzz" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
             <div class="flex justify-center">
-                <button onclick="FizzBuzz()"
+                <button onclick="makeFizzBuzz()"
                     class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
                 <button onclick="resetFizzBuzz()"
                     class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
         <div class="xl:w-1/4">
-            <span class="flex justify-center font-semibold text-lg m-0">Chessboard</span>
-            <div class="bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <span class="flex justify-center font-semibold text-lg m-0">ChessBoard</span>
+            <div id="chessBoard" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
             <div class="flex justify-center">
-                <button
-                    class="border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="makeChessBoard()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="resetChessBoard()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
         <div class="xl:w-1/4">
-            <span class="flex justify-center font-semibold text-lg m-0">...</span>
-            <div class="bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <span class="flex justify-center font-semibold text-lg m-0">Minimum</span>
+            <div id="minimum" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+            <span class="flex justify-center">Find the Minimum: 20 or 34</span>
+        </div>
             <div class="flex justify-center">
-                <button
-                    class="border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="min(20, 24)"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="resetMinimum()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
     </div>
     <div class="xl:flex xl:mt-16">
         <div class="xl:w-1/4">
-            <span class="flex justify-center font-semibold text-lg m-0">...</span>
-            <div class="bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <span class="flex justify-center font-semibold text-lg m-0">Recursion</span>
+            <div id="recursion" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
             <div class="flex justify-center">
-                <button
-                    class="border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="isEven(12)"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">12</button>
+                    <button onclick="isEven(3)"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">3</button>
+                    <button onclick="isEven(-1)"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">-1</button>
+                <button onclick="resetRecursion()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
         <div class="xl:w-1/4">
-            <span class="flex justify-center font-semibold text-lg m-0">...</span>
-            <div class="bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <span class="flex justify-center font-semibold text-lg m-0">Bean Counting</span>
+            <div id="bean" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
             <div class="flex justify-center">
-                <button
-                    class="border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="countBs('Bulbasaur')"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Count B's</button>
+                <button onclick="resetBeanCounting()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
         <div class="xl:w-1/4">
-            <span class="flex justify-center font-semibold text-lg m-0">...</span>
-            <div class="bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <span class="flex justify-center font-semibold text-lg m-0">Count Characters</span>
+            <div id="character" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
             <div class="flex justify-center">
-                <button
-                    class="border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="countChar('Spongebob Squarepants', 'b')"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Count Characters</button>
+                <button onclick="resetCountChar()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
         <div class="xl:w-1/4">
-            <span class="flex justify-center font-semibold text-lg m-0">...</span>
-            <div class="bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <span class="flex justify-center font-semibold text-lg m-0">Find Range</span>
+            <div id="range" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center">Get the range between 1 an 10</span>
+            </div>
             <div class="flex justify-center">
-                <button
-                    class="border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Run</button>
+                <button onclick="findRange(1, 10)"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Find Range</button>
+                <button onclick="resetFindRange()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
             </div>
         </div>
+    </div>
+    <div class="xl:flex xl:mt-16">
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">Find Sum</span>
+            <div id="sum" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center text-center">Find the sum of theses numbers: 1,2,3,4,5,6,7,8,9,10</span>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="findSum([1,2,3,4,5,6,7,8,9,10])"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Find Sum</button>
+                <button onclick="resetSum()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">Find Range With Step</span>
+            <div id="rangeStep" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem"></div>
+            <div class="flex justify-center">
+                <button onclick="findRangeWithStep(20, 1, -2)"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Find Range With Step</button>
+                <button onclick="resetRangeWithStep()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">Reversing an Array</span>
+            <div id="revArray" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center text-center">Reverse these Numbers:<br/> 1,2,3,4,5</span>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="reverseArray([1,2,3,4,5])"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Find Range With Step</button>
+                <button onclick="resetReverseArray()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">Reversing an Array In Place</span>
+            <div id="revArrayInPlace" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center text-center">Reverse these Numbers:<br/> 1,2,3,4,5</span>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="reverseArrayInPlace([1,2,3,4,5])"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Find Range With Step</button>
+                <button onclick="resetReverseArrayInPlace()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="xl:flex xl:mt-16">
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">Array To List</span>
+            <div id="arrayToListID" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center text-center">Make this array into a list: [1, 2, 3]</span>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="arrayToList([1,2,3])"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Make List</button>
+                <button onclick="resetArrayToList()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">List To Array</span>
+            <div id="rangeStep" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center text-center">Make this List into an Array: list: {value: 1, rest: {value: 2, rest{value: 3, rest: null}}}</span>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="listToArray(arrayToList([1,2,3]))"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Make Array</button>
+                <button onclick="resetListToArray()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">Reversing an Array</span>
+            <div id="revArray" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center text-center">Reverse these Numbers:<br/> 1,2,3,4,5</span>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="reverseArray([1,2,3,4,5])"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Find Range With Step</button>
+                <button onclick="resetReverseArray()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+        <div class="xl:w-1/4">
+            <span class="flex justify-center font-semibold text-lg m-0">Reversing an Array In Place</span>
+            <div id="revArrayInPlace" class="px-3 py-3 bg-yellow-400 my-3 mx-3 rounded-md" style="height: 18rem">
+                <span class="flex justify-center text-center">Reverse these Numbers:<br/> 1,2,3,4,5</span>
+            </div>
+            <div class="flex justify-center">
+                <button onclick="reverseArrayInPlace([1,2,3,4,5])"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Find Range With Step</button>
+                <button onclick="resetReverseArrayInPlace()"
+                    class="mx-2 border-gray-900 border-2 px-3 py-2 rounded-lg focus:outline-none hover:bg-yellow-400">Reset</button>
+            </div>
+        </div>
+        <button id="btn" onclick="incrementCount()">0</button>
     </div>
 
     <script src="script.js"></script>
